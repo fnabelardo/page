@@ -490,8 +490,7 @@
 <!-- Main JS File -->
 <script>
     function updateCopyrightEndYear() {
-        const currentYear = new Date().getFullYear();
-        document.getElementById('copyright-end-year').textContent = currentYear;
+        document.getElementById('copyright-end-year').textContent = new Date().getFullYear();
     }
 
     // Call the function to update the year when the page loads
