@@ -722,6 +722,7 @@ section,
   text-transform: uppercase;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   margin-bottom: 10px;
+  color: #0a53be;
 }
 
 .resume .resume-item h5 {
