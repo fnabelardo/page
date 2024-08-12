@@ -411,9 +411,9 @@
             <div class="row">
 
                 <div class="col-lg-12 text-center" data-aos="fade-up" data-aos-delay="100">
-                    <h8 class="resume-title"><i class="bi bi-download"></i><a href="./assets/files/mr_fnas_resume.pdf"
-                                                                              target="_blank"> Download Resume</a>
-                    </h8>
+                    <h6 class="resume-title"><a href="./assets/files/mr_fnas_resume.pdf" target="_blank"><i
+                            class="bi bi-download"></i> Download Resume</a>
+                    </h6>
                 </div>
 
             </div>
@@ -623,8 +623,6 @@
             </div>
         </div>
 
-        </div>
-
     </section><!-- /Patents Section -->
 
 </main>
@@ -687,22 +685,19 @@
 
     $(document).ready(function () {
 
-        var panelSize = 186;
-        var numberOfPanels = $('.pane').length - 1;
-        var tz = Math.round((panelSize / 2) /
+        const panelSize = 186;
+        let numberOfPanels = $('.pane').length - 1;
+        let tz = Math.round((panelSize / 2) /
             Math.tan(((Math.PI * 2) / numberOfPanels) / 2)); //traslateZ
 
-        var rY = (360 / numberOfPanels); //rotateY
+        const rY = (360 / numberOfPanels); //rotateY
 
-        var deg = 0;
-        var color = ["#008000a8", "#ffff00a8", "#ffa500a8", "#000000a8", "#00ffffa8"];
-
+        let deg = 0;
         // var rand = back[Math.floor(Math.random() * back.length)];
-        $('.pane').each(function (i, obj) {
-            var rand = color[Math.floor(Math.random() * color.length)];
+        numberOfPanels.each(function (i, obj) {
 
             // $(this).css('background-color',rand);
-            if (i != $('.pane').length - 1) {
+            if (i !== $('.pane').length - 1) {
                 $(this).css('transform', 'rotateY(' + deg + 'deg) translateZ(' + tz + 'px)');
             } else {
                 $(this).css('border-radius', '50%');
