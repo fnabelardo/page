@@ -693,8 +693,11 @@
         const rY = (360 / numberOfPanels); //rotateY
 
         let deg = 0;
+        let color = ["#008000a8", "#ffff00a8", "#ffa500a8", "#000000a8", "#00ffffa8"];
+
         // var rand = back[Math.floor(Math.random() * back.length)];
-        numberOfPanels.each(function (i, obj) {
+        $('.pane').each(function (i, obj) {
+            let rand = color[Math.floor(Math.random() * color.length)];
 
             // $(this).css('background-color',rand);
             if (i !== $('.pane').length - 1) {
